@@ -12,5 +12,9 @@ sudo installer -pkg AWSCLIV2.pkg -target /
 echo '#Pyenv Settings'  >> ~/.zshrc
 echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.zshrc
 echo 'export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.zshrc
+echo 'eval "$(pyenv init --path)"' >> ~/.zshrc
 echo 'eval "$(pyenv init -)"' >> ~/.zshrc
 
+zsh
+pyenv install 3.9.6
+pyenv global 3.9.6
