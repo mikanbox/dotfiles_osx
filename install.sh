@@ -18,3 +18,6 @@ echo 'eval "$(pyenv init -)"' >> ~/.zshrc
 zsh
 pyenv install 3.9.6
 pyenv global 3.9.6
+
+git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
+~/.fzf/install
